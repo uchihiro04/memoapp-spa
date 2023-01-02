@@ -5,6 +5,9 @@ const memos = ref(JSON.parse(localStorage.getItem(STORAGE_KEY)) || []);
 const body = ref(undefined);
 
 const addTodo = () => {
+  if (!body.value) {
+    return;
+  }
   memos.value.push({
     id: self.crypto.randomUUID(),
     body: body.value,
