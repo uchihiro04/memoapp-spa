@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from "vue";
-const memos = ref([]);
+const STORAGE_KEY = "memosData";
+const memos = ref(JSON.parse(localStorage.getItem(STORAGE_KEY)) || []);
 const body = ref(undefined);
 
 const addTodo = () => {
@@ -9,7 +10,7 @@ const addTodo = () => {
     body: body.value,
   });
   body.value = "";
-  console.log(memos.value);
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(memos.value));
 };
 </script>
 
@@ -17,6 +18,5 @@ const addTodo = () => {
   <form @submit.prevent="addTodo">
     <textarea v-model="body" cols="30" rows="10"></textarea>
     <button type="submit">追加</button>
-    <button>戻る</button>
   </form>
 </template>
