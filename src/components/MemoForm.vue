@@ -10,6 +10,7 @@ const addTodo = () => {
   }
   memos.value.push({
     id: self.crypto.randomUUID(),
+    firstLine: body.value.trim().split(/\n/)[0],
     body: body.value,
   });
   body.value = "";
@@ -18,8 +19,10 @@ const addTodo = () => {
 </script>
 
 <template>
-  <form @submit.prevent="addTodo">
-    <textarea v-model="body" cols="30" rows="10"></textarea>
-    <button type="submit">追加</button>
-  </form>
+  <div class="form-container">
+    <form class="memo-form">
+      <textarea v-model="body" cols="30" rows="10"></textarea>
+      <button type="submit" @click="addTodo">保存</button>
+    </form>
+  </div>
 </template>

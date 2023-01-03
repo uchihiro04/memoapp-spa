@@ -1,15 +1,10 @@
 <script setup>
-import { RouterView } from "vue-router";
+import MemoList from "./components/MemoList.vue";
 </script>
 
 <template>
-  <h1>メモ一覧</h1>
-  <!-- <ul v-for="memo in memos" :key="memo.id">
-    <li>{{ memo.body }}</li>
-  </ul> -->
-
+  <MemoList />
   <RouterLink to="/new">＋</RouterLink>
   <RouterView />
 </template>
-
 <style scoped></style>
