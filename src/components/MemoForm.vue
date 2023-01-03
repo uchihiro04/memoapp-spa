@@ -26,3 +26,33 @@ const addTodo = () => {
     </form>
   </div>
 </template>
+
+<style scoped>
+.memo-form {
+  text-align: center;
+}
+
+.memo-form textarea {
+  border: solid 1px #aaa;
+  border-radius: 4px;
+  font-size: 2rem;
+  height: 30rem;
+  /* vertical-align: middle; */
+  width: 30%;
+}
+
+button {
+  background-color: #00aeef;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 4rem;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  vertical-align: middle;
+}
+</style>
