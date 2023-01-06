@@ -1,10 +1,12 @@
-<script setup>
-import MemoList from "./components/MemoList.vue";
-</script>
+<script setup></script>
 
 <template>
-  <MemoList />
-  <RouterLink to="/new">＋</RouterLink>
-  <RouterView />
+  <h1>メモアプリ</h1>
+  <router-view></router-view>
 </template>
-<style scoped></style>
+
+<style scoped>
+h1 {
+  font-size: 3rem;
+}
+</style>

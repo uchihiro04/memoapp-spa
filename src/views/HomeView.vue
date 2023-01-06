@@ -1,7 +1,7 @@
 <script setup>
-import HomeContainer from "../components/HomeContainer.vue";
+import MemoList from "../components/MemoList.vue";
 </script>
 
 <template>
-  <HomeContainer />
+  <MemoList />
 </template>
