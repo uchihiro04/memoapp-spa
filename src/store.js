@@ -32,6 +32,11 @@ export const store = reactive({
     localStorage.setItem(STORAGE_KEY, JSON.stringify(this.memos));
   },
 
+  deleteMemo(id) {
+    this.memos = this.memos.filter((memo) => memo.id !== id);
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(this.memos));
+  },
+
   findMemo(id) {
     return this.memos.find((memo) => memo.id === id);
   },

@@ -8,9 +8,15 @@ const route = useRoute();
 const router = useRouter();
 const editingMemo = computed(() => store.findMemo(route.params.id));
 
-function onSubmit(event) {
+function submitEditedMemo(event) {
   event.preventDefault();
   store.updateMemo(route.params.id);
+  router.push("/");
+}
+
+function submitDeletedMemo(event) {
+  event.preventDefault();
+  store.deleteMemo(route.params.id);
   router.push("/");
 }
 </script>
@@ -18,7 +24,14 @@ function onSubmit(event) {
 <template>
   <MemoList />
   <form class="memo-form">
-    <textarea v-model="editingMemo.body" cols="30" rows="10"></textarea>
-    <button type="submit" @click="onSubmit">編集</button>
+    <!--メモ削除時にeditingMemoがundefinedになることによってエラーが発生するため、v-ifを追加 -->
+    <textarea
+      v-if="editingMemo"
+      v-model="editingMemo.body"
+      cols="30"
+      rows="10"
+    ></textarea>
+    <button type="submit" @click="submitEditedMemo">編集</button>
+    <button type="submit" @click="submitDeletedMemo">削除</button>
   </form>
 </template>
