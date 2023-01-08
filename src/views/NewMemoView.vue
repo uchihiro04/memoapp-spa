@@ -1,7 +1,7 @@
 <script setup>
-import MemoForm from "../components/MemoForm.vue";
+import NewMemoForm from "../components/MemoForm.vue";
 </script>
 
 <template>
-  <MemoForm />
+  <NewMemoForm />
 </template>
