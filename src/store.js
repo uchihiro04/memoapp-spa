@@ -6,7 +6,7 @@ export const store = reactive({
   memos: JSON.parse(localStorage.getItem(STORAGE_KEY)) || [],
   add() {
     if (!this.body.trim()) {
-      alert("未入力の状態ではメモを保存できません");
+      alert("文字を入力してください");
       return;
     }
     this.memos.push({
@@ -20,6 +20,14 @@ export const store = reactive({
 
   updateMemo(id) {
     const memo = this.findMemo(id);
+    if (!memo.body.trim()) {
+      alert("文字を入力してください");
+      const preEditingMemos = JSON.parse(localStorage.getItem(STORAGE_KEY));
+      memo.body = preEditingMemos.find(
+        (preEditingMemo) => preEditingMemo.id == id
+      ).body;
+      return;
+    }
     memo.firstLine = memo.body.trim().split(/\n/)[0];
     localStorage.setItem(STORAGE_KEY, JSON.stringify(this.memos));
   },
