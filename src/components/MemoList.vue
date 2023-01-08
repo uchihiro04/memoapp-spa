@@ -5,7 +5,9 @@ import { store } from "../store.js";
 <template>
   <h1>メモ一覧</h1>
   <ul v-for="memo in store.memos" :key="memo.id">
-    <li>{{ memo.firstLine }}</li>
+    <li>
+      <RouterLink :to="`/memos/${memo.id}`">{{ memo.firstLine }}</RouterLink>
+    </li>
   </ul>
   <router-link to="/memos/new">＋</router-link>
 </template>
