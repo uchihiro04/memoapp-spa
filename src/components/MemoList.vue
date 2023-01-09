@@ -21,10 +21,6 @@ h2 {
   font-weight: bold;
 }
 
-.memo-list-container {
-  width: 30%;
-}
-
 ul {
   list-style: none;
   padding: 0;

@@ -12,6 +12,7 @@ import MemoList from "../components/MemoList.vue";
 .memoapp-container {
   display: flex;
   justify-content: center;
+  width: 68%;
 }
 
 .memo-list-container {

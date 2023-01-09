@@ -1,5 +1,5 @@
 <script setup>
-import EditMemoForm from "../components/EditMemoForm.vue";
+import EditMemoForm from "../components/MemoForm.vue";
 </script>
 
 <template>
