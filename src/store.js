@@ -4,7 +4,7 @@ const STORAGE_KEY = "memosData";
 export const store = reactive({
   body: "新規メモ",
   memos: JSON.parse(localStorage.getItem(STORAGE_KEY)) || [],
-  add() {
+  addMemo() {
     if (!this.body.trim()) {
       alert("文字を入力してください");
       return;

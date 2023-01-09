@@ -13,7 +13,7 @@ function submitEditedMemo(event) {
   if (route.params.id) {
     store.updateMemo(route.params.id);
   } else {
-    store.add();
+    store.addMemo();
   }
   router.push("/");
 }
@@ -50,11 +50,11 @@ function submitDeletedMemo(event) {
 
 <style scoped>
 .memo-container {
-  display: flex;
   align-items: flex-start;
-  width: 66%;
+  display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  width: 66%;
 }
 
 .memo-form {
