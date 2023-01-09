@@ -3,5 +3,18 @@ import MemoList from "../components/MemoList.vue";
 </script>
 
 <template>
-  <MemoList />
+  <div class="memoapp-container">
+    <MemoList />
+  </div>
 </template>
+
+<style scoped>
+.memoapp-container {
+  display: flex;
+  justify-content: center;
+}
+
+.memo-list-container {
+  width: 50%;
+}
+</style>

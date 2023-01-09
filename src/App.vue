@@ -7,6 +7,10 @@
 
 <style scoped>
 h1 {
-  font-size: 3rem;
+  color: #708090;
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 3rem auto;
+  text-align: center;
 }
 </style>
