@@ -7,6 +7,7 @@ export const store = reactive({
   addMemo() {
     if (!this.body.trim()) {
       alert("文字を入力してください");
+      this.body = "新規メモ";
       return;
     }
     this.memos.push({
