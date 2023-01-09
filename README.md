@@ -29,31 +29,33 @@
 
 - 削除
 
-編集画面で削除ボタンをクリックするとメモは削除されます。その後メモ一覧に移行します。
-
-削除
+  編集画面で削除ボタンをクリックするとメモは削除されます。その後メモ一覧に移行します。
 
 ## 利用方法
 
 1. 任意の作業ディレクトリにて `git clone` してください。(プルリクエストの段階のため、ブランチを指定してください)
 
 ```
-$ git clone -b my-todoapp https://github.com/自分のアカウント名/todoapp-fjord.git
+$ git clone -b my-memoapp https://github.com/自分のアカウント名/memoapp-spa.git
 ```
 
-1. `cd todo-fjord` でカレントディレクトリを変更してください。
+1. `cd memoapp-spa` でカレントディレクトリを変更してください。
+1. ターミナルにて`npm run dev`を実行してください。
 1. `index.html`を開いてください。
 
 ## スクリーンショット
 
-- Todo リストの一覧表示
-  <img width="1440" alt="image" src="https://user-images.githubusercontent.com/77523896/208381967-8b883671-4634-4f30-9149-2e22e7d8a87d.png">
+- 一覧表示
+  <img width="1440" alt="image" src="https://user-images.githubusercontent.com/77523896/211264390-5df02c58-49e5-4575-a0bd-835d97eee77f.png">
 
-- Todo リストの追加
-  ![22121901](https://user-images.githubusercontent.com/77523896/208381482-0aeb7797-0798-44da-b64c-227b19631663.gif)
+- 詳細表示
+  ![23010901](https://user-images.githubusercontent.com/77523896/211264747-c71f1e7c-7da8-4069-b687-aecfdf8123b3.gif)
 
-- Todo リストの編集
-  ![22121902](https://user-images.githubusercontent.com/77523896/208382402-40b5ee69-349b-44f2-988c-7674cf7c9a5c.gif)
+- 追加
+  ![23010902](https://user-images.githubusercontent.com/77523896/211265328-528ac04b-5483-40ef-abea-0905ebd2a854.gif)
 
-- Todo リストの削除
-  ![22121903](https://user-images.githubusercontent.com/77523896/208382641-0a7ca9ff-6c93-4749-a5d6-8d9a47cabc73.gif)
+- 編集
+  ![23010903](https://user-images.githubusercontent.com/77523896/211265724-59208185-1cf7-4b14-8b38-84cc365194e4.gif)
+
+- 削除
+  ![23010904](https://user-images.githubusercontent.com/77523896/211266016-56810c3d-5bd2-4911-aba4-b05713a3d6d8.gif)
