@@ -49,13 +49,17 @@ $ git clone -b my-memoapp https://github.com/自分のアカウント名/memoapp
   <img width="1440" alt="image" src="https://user-images.githubusercontent.com/77523896/211264390-5df02c58-49e5-4575-a0bd-835d97eee77f.png">
 
 - 詳細表示
+
   ![23010901](https://user-images.githubusercontent.com/77523896/211264747-c71f1e7c-7da8-4069-b687-aecfdf8123b3.gif)
 
 - 追加
+
   ![23010902](https://user-images.githubusercontent.com/77523896/211265328-528ac04b-5483-40ef-abea-0905ebd2a854.gif)
 
 - 編集
+
   ![23010903](https://user-images.githubusercontent.com/77523896/211265724-59208185-1cf7-4b14-8b38-84cc365194e4.gif)
 
 - 削除
+
   ![23010904](https://user-images.githubusercontent.com/77523896/211266016-56810c3d-5bd2-4911-aba4-b05713a3d6d8.gif)
