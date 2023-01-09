@@ -1,35 +1,59 @@
-# memoapp-spa
+# Todo リストアプリ
 
-This template should help get you started developing with Vue 3 in Vite.
+一覧表示・詳細表示・追加・編集・削除機能を備えたメモアプリです。
+（フィヨルドブートキャンプの課題になります）
 
-## Recommended IDE Setup
+## 開発環境
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- Vue.js 3.2.45
 
-## Customize configuration
+## 機能概要
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+以下のような機能を使用することができます。
 
-## Project Setup
+- 一覧表示
 
-```sh
-npm install
+  メモの 1 行目をタイトルとして一覧表示します。タイトルをクリックするとそのメモの編集画面が表示されます。
+
+- 詳細表示
+
+  メモを全文表示します（編集画面と同じ状態です）。
+
+- 追加
+
+  ＋をクリックすると「新規メモ」とあらかじめ入力された編集画面が表示されます。
+
+- 編集
+
+  テキストエリアにメモの内容が表示され、編集することができます。編集ボタンをクリックすると編集内容は保存されます。その後メモ一覧に移行します。
+
+- 削除
+
+編集画面で削除ボタンをクリックするとメモは削除されます。その後メモ一覧に移行します。
+
+削除
+
+## 利用方法
+
+1. 任意の作業ディレクトリにて `git clone` してください。(プルリクエストの段階のため、ブランチを指定してください)
+
+```
+$ git clone -b my-todoapp https://github.com/自分のアカウント名/todoapp-fjord.git
 ```
 
-### Compile and Hot-Reload for Development
+1. `cd todo-fjord` でカレントディレクトリを変更してください。
+1. `index.html`を開いてください。
 
-```sh
-npm run dev
-```
+## スクリーンショット
 
-### Compile and Minify for Production
+- Todo リストの一覧表示
+  <img width="1440" alt="image" src="https://user-images.githubusercontent.com/77523896/208381967-8b883671-4634-4f30-9149-2e22e7d8a87d.png">
 
-```sh
-npm run build
-```
+- Todo リストの追加
+  ![22121901](https://user-images.githubusercontent.com/77523896/208381482-0aeb7797-0798-44da-b64c-227b19631663.gif)
 
-### Lint with [ESLint](https://eslint.org/)
+- Todo リストの編集
+  ![22121902](https://user-images.githubusercontent.com/77523896/208382402-40b5ee69-349b-44f2-988c-7674cf7c9a5c.gif)
 
-```sh
-npm run lint
-```
+- Todo リストの削除
+  ![22121903](https://user-images.githubusercontent.com/77523896/208382641-0a7ca9ff-6c93-4749-a5d6-8d9a47cabc73.gif)
