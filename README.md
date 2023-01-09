@@ -40,6 +40,7 @@ $ git clone -b my-memoapp https://github.com/自分のアカウント名/memoapp
 ```
 
 1. `cd memoapp-spa` でカレントディレクトリを変更してください。
+1. ターミナルにて`npm install`を実行してください。
 1. ターミナルにて`npm run dev`を実行してください。
 1. `index.html`を開いてください。
 
