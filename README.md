@@ -1,35 +1,66 @@
-# memoapp-spa
+# メモアプリ
 
-This template should help get you started developing with Vue 3 in Vite.
+一覧表示・詳細表示・追加・編集・削除機能を備えたメモアプリです。
+（フィヨルドブートキャンプの課題になります）
 
-## Recommended IDE Setup
+## 開発環境
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- Vue.js 3.2.45
 
-## Customize configuration
+## 機能概要
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+以下のような機能を使用することができます。
 
-## Project Setup
+- 一覧表示
 
-```sh
-npm install
+  メモの 1 行目をタイトルとして一覧表示します。タイトルをクリックするとそのメモの編集画面が表示されます。
+
+- 詳細表示
+
+  メモを全文表示します（編集画面と同じ状態です）。
+
+- 追加
+
+  ＋をクリックすると「新規メモ」とあらかじめ入力された編集画面が表示されます。
+
+- 編集
+
+  テキストエリアにメモの内容が表示され、編集することができます。編集ボタンをクリックすると編集内容は保存されます。その後メモ一覧に移行します。
+
+- 削除
+
+  編集画面で削除ボタンをクリックするとメモは削除されます。その後メモ一覧に移行します。
+
+## 利用方法
+
+1. 任意の作業ディレクトリにて `git clone` してください。(プルリクエストの段階のため、ブランチを指定してください)
+
+```
+$ git clone -b my-memoapp https://github.com/自分のアカウント名/memoapp-spa.git
 ```
 
-### Compile and Hot-Reload for Development
+1. `cd memoapp-spa` でカレントディレクトリを変更してください。
+1. ターミナルにて`npm install`を実行してください。
+1. ターミナルにて`npm run dev`を実行してください。
+1. `index.html`を開いてください。
 
-```sh
-npm run dev
-```
+## スクリーンショット
 
-### Compile and Minify for Production
+- 一覧表示
+  <img width="1440" alt="image" src="https://user-images.githubusercontent.com/77523896/211264390-5df02c58-49e5-4575-a0bd-835d97eee77f.png">
 
-```sh
-npm run build
-```
+- 詳細表示
 
-### Lint with [ESLint](https://eslint.org/)
+  ![23010901](https://user-images.githubusercontent.com/77523896/211264747-c71f1e7c-7da8-4069-b687-aecfdf8123b3.gif)
 
-```sh
-npm run lint
-```
+- 追加
+
+  ![23010902](https://user-images.githubusercontent.com/77523896/211265328-528ac04b-5483-40ef-abea-0905ebd2a854.gif)
+
+- 編集
+
+  ![23010903](https://user-images.githubusercontent.com/77523896/211265724-59208185-1cf7-4b14-8b38-84cc365194e4.gif)
+
+- 削除
+
+  ![23010904](https://user-images.githubusercontent.com/77523896/211266016-56810c3d-5bd2-4911-aba4-b05713a3d6d8.gif)

@@ -1,0 +1,33 @@
+/* reset.css */
+
+html,
+body,
+h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* 初期設定 */
+html {
+  font-size: 10px;
+}
+
+body {
+  color: #000;
+  background-color: #fff8ff;
+  font-family: "Avenir", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans",
+    "ヒラギノ角ゴシック", YuGothic, "Yu Gothic", "メイリオ", Meiryo,
+    "ＭＳ Ｐゴシック", "MS PGothic";
+  line-height: 1;
+}
+
+/* 全てに box-sizing: border-box; を適用 */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
