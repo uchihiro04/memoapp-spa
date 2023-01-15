@@ -2,12 +2,12 @@ import { reactive } from "vue";
 const STORAGE_KEY = "memosData";
 
 export const store = reactive({
-  body: "新規メモ",
+  body: "",
   memos: JSON.parse(localStorage.getItem(STORAGE_KEY)) || [],
   addMemo() {
     if (!this.body.trim()) {
       alert("文字を入力してください");
-      this.body = "新規メモ";
+      this.body = "";
       return;
     }
     this.memos.push({
@@ -16,7 +16,7 @@ export const store = reactive({
       body: this.body,
     });
     localStorage.setItem(STORAGE_KEY, JSON.stringify(this.memos));
-    this.body = "新規メモ";
+    this.body = "";
   },
 
   updateMemo(id) {

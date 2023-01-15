@@ -37,7 +37,14 @@ function submitDeletedMemo(event) {
         cols="30"
         rows="10"
       ></textarea>
-      <textarea v-else v-model="store.body" cols="30" rows="10"> </textarea>
+      <textarea
+        v-else
+        v-model="store.body"
+        cols="30"
+        rows="10"
+        placeholder="新規メモ"
+      >
+      </textarea>
       <div class="memoapp-button">
         <button type="submit" @click="submitEditedMemo">編集</button>
         <button class="delete-button" type="submit" @click="submitDeletedMemo">
